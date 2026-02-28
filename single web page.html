@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nandhu's Coffee Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f1ea;
+            color: #3e2c23;
+        }
+
+        header {
+            background: #4b2e2e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            background: rgba(0,0,0,0.5);
+            padding: 15px 30px;
+            border-radius: 8px;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .menu-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .about {
+            background-color: #e8dfd8;
+        }
+
+        footer {
+            background: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #6f4e37;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #5a3e2b;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>☕ nandhu's Coffee Shop</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Fresh Coffee. Warm Vibes.</h1>
+</div>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <h3>Espresso</h3>
+            <p>Strong and bold classic coffee.</p>
+            <p><strong>$3.00</strong></p>
+        </div>
+        <div class="menu-item">
+            <h3>Cappuccino</h3>
+            <p>Rich espresso with steamed milk foam.</p>
+            <p><strong>$4.50</strong></p>
+        </div>
+        <div class="menu-item">
+            <h3>Latte</h3>
+            <p>Smooth espresso with creamy milk.</p>
+            <p><strong>$4.00</strong></p>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Welcome to Cozy Coffee Shop! We serve freshly brewed coffee 
+        made from high-quality beans. Our cozy atmosphere is perfect 
+        for relaxing, working, or meeting friends.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@cozycoffee.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <a href="#" class="btn">Order Now</a>
+</section>
+
+<footer>
+    <p>© 2026 Cozy Coffee Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
